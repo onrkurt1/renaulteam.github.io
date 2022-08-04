@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 7px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+p {
+    padding: 1.6rem 0;
+}
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    font-family: Montserrat;
+    background-color: #0000006c;
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    z-index: +2;
+}
+
+#logo-box {
+    float: left;
+    padding-top: 0.5rem;
+}
+
+#logo-box .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-left: 2.5rem;
+}
+
+#nav-links {
+    float: right;
+    margin-right: 2.5rem;
+}
+
+#nav-links .nav-item {
+    float: left;
+    margin: 0.5rem;
+}
+
+#nav-links .nav-link {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: block;
+    padding: 1.6rem;
+    letter-spacing: 0.1rem;
+    transition: color 0.4s;
+}
+
+#nav-links .nav-link:hover {
+    color: darkgray;
+}
+
+#nav-links ul {
+    list-style-type: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    height: 46rem;
+}
+
+header .bg-image {
+    position: absolute;
+    background-image: url(https://r.resimlink.com/dZXYrS.png);
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -2;
+}
+
+header h1 {
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: white;
+    border: 1px solid #666;
+    padding: 1.6rem 3.2rem;
+    margin: 0.5rem 0;
+    transition: all 0.4s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #333;
+}
+
+#section-a {
+    background-color: #2d3d4f;
+    color: #fff;
+    padding: 3.2rem;
+}
+
+#section-b {
+    background-color: #2d3d4f;
+    padding: 2rem;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: inline-block;
+}
+
+
+
+.col-content {
+    padding: 1.5rem;
+}
+
+#section-c {
+    background-color: darkslategray;
+    color: #fff;
+    padding: 5rem;
+}
+
+#section-d .box {
+    padding: 5rem;
+}
+
+#section-d .box:first-child {
+
+    background-color: #2d3d4f;
+}
+
+#section-d a {
+
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+footer {
+    padding: 4rem;
+    background: black;
+}
+
+footer a {
+    color: yellowgreen;
+}
+
+@media screen and (min-width:800px) {
+
+    html {
+        font-size: 9px;
+    }
+
+    #section-b {
+        width: 100%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        display: inline-block;
+    }
+    #section-b .carousel-item {
+    width: 33.33%;
+    margin-left: 33.33%;
+}
+}
+
+@media screen and (min-width:1200px) {
+
+    html {
+        font-size: 11px;
+    }
+
+    #section-b {
+        width: 100%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        display: inline-block;
+    }
+    #section-b .carousel-item {
+    width: 33.33%;
+    margin-left: 33.33%;
+}
+
+    .box {
+        width: 50%;
+        float: left;
+    }
+
+}
